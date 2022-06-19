@@ -23,4 +23,4 @@ jobs:
         path: "./otus-homeworks/"
 
     - name: Run tests
-      run: curl https://raw.githubusercontent.com/express42/otus-homeworks/2022-02/run.sh | bash
+      run: curl https://raw.githubusercontent.com/express42/otus-homeworks/2022-05/run.sh | bash
