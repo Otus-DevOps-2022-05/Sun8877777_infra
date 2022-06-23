@@ -6,7 +6,7 @@ Sun8877777 Infra   repository
 
 Цель:
 В данном дз студент создаст виртуальные машины в YC. Настроит bastion host и ssh.
-В данном задании тренируются навыки: создания виртуальных машин, настройки bastion host, ssh №3
+В данном задании тренируются навыки: создания виртуальных машин, настройки bastion host, ssh
 
 Самостоятельное задание №1. 
 Исследовать способ подключения к someinternalhost в одну
@@ -48,3 +48,14 @@ alias someinternalhost="ssh -J appuser@51.250.14.189 appuser@10.128.0.20"
 ---
 bastion_IP = 51.250.14.189
 someinternalhost_IP = 10.128.0.20
+---
+Домашнее задание №4
+
+testapp_IP = 51.250.91.35
+testapp_port = 9292
+
+Дополнительное задание
+Для поднятия VM достаточно выполнить:
+    bash yc_create_cc_with_metadata.sh  # Startup скрипт
+
+metadata.yaml - мета для Startup скрипт

@@ -1,0 +1,20 @@
+#cloud-config
+users:
+  - name: yc-user
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCU3OlSHBqkB3WGYAHEB5pKnEd4jj5sdRQrRGh9Sss0Vba5kW2NUTQl9v3CvgZ2kLQiix6/YU5Rsn7+i5oDZ69p5vJr7sVESbvSjB3QPFf+W3KBWBre2iScN1UFwD4LQv+nsRlKe73XMz2OwMDU2vvWfJzzajLGOvHbrN6ALQsdWiegkQC+OwagltEYMpg7NkWsDYmSbbF0yN6kbyFIyO6jv20RhHlqFNL9yFSaQgDxJ+UoChmz+TVkRTDj7aREtXYlDMPtfUR7DHIDjCs7d46hwUkt3KbQOUDk7nGqAkvsGbLkBel55Km0HIeiXicvQDB0iqpdxTWKzfeiMdHfnpLf alex@GH2
+runcmd:
+  - [ sh, -c, echo "=========Start init scripts=========" ]
+  - cd /home/yc-user
+  - pwd
+  - [ sh, -c, echo "=========Install Ruby =========" ]
+  - sudo apt update && sudo apt install -y ruby-full ruby-bundler build-essential
+  - [ sh, -c, echo "=========Install Mongo =========" ]
+  - sudo apt-get install -y mongodb && sudo systemctl start mongodb &&  sudo systemctl enable mongodb && sleep 10
+  - [ sh, -c, echo "=========Buqld and start service =========" ]
+  - sudo apt install -y git && git clone -b monolith https://github.com/express42/reddit.git
+  - cd reddit && bundle install && puma -d
+  - [ sh, -c, echo "=========END init scripts=========" ]
