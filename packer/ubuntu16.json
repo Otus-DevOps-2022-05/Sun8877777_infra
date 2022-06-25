@@ -8,6 +8,10 @@
             "image_name": "reddit-base-{{timestamp}}",
             "image_family": "reddit-base",
             "ssh_username": "ubuntu",
+            "zone": "ru-central1-a",
+            "subnet_id": "e9bstk35ontc18d9u2h7",
+            "use_ipv4_nat": true,
+            "disk_type": "network-hdd",
             "platform_id": "standard-v1"
         }
     ],
