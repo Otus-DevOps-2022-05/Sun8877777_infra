@@ -1,7 +1,7 @@
 {
       "folder_id": "b**p",
       "source_image_family": "ubuntu-****",
-      "service_account_key_file": "/*****key.json",
+      "service_account_key_file": "files/key.json",
       "zone": "ru-central1-*",
       "disk_type": "network-***",
       "subnet_id": "e***********7"
