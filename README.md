@@ -45,7 +45,6 @@ alias someinternalhost="ssh -J appuser@51.250.14.189 appuser@10.128.0.20"
 Подключил ssl сертификат указав в настройках 51.250.14.189.sslip.io в поле Lets Encrypt Domain.
 Документация https://docs.pritunl.com/docs/custom-ssl-certificate
 
----
 bastion_IP = 51.250.14.189
 someinternalhost_IP = 10.128.0.20
 ---
@@ -59,3 +58,9 @@ testapp_port = 9292
     bash yc_create_cc_with_metadata.sh  # Startup скрипт
 
 metadata.yaml - мета для Startup скрипт
+---
+Домашнее задание №5
+В данном задании был создан сервисный аккаунт с минимальным набором прав.
+Создан service account key file, который использовался при сборки paker -ом образов. С помощью пакер был создан базовый образ с ruby и mongodb.
+Также выполнена параметризация сборки с помощью файла variables.json.
+В кажестве Дополнительного задания создан  bake-образ reddit-full с использованием systemd unit и также скрипт create-reddit-vm.sh для быстрого запуска ВМ на основе нового образа reddit-full.
