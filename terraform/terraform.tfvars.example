@@ -1,0 +1,7 @@
+cloud_id                 = "b*****************i"
+folder_id                = "b*******p"
+zone                     = "ru-central1-a"
+image_id                 = "f**************4"
+subnet_id                = "e9************7"
+public_key_path          = "~/.ssh/id_rsa.pub"
+service_account_key_file = "key.json"
