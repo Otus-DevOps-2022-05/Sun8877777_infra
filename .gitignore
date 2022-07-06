@@ -6,3 +6,7 @@ packer/variables.json
 terraform/.terraform/
 key_tf.json
 terraform/terraform.tfvars
+terraform/prod/.terraform/
+terraform/stage/.terraform/
+terraform/prod/provider.tf
+terraform/stage/provider.tf
