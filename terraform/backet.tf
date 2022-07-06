@@ -5,7 +5,5 @@ provider "yandex" {
 }
 
 resource "yandex_storage_bucket" "acheremisin-bucket" {
-  access_key = var.access_key
-  secret_key = var.secret_key
   bucket     = "acheremisin-bucket"
 }

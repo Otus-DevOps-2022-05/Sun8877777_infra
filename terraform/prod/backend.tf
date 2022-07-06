@@ -1,11 +1,4 @@
 terraform {
-  required_providers {
-    yandex = {
-      source  = "yandex-cloud/yandex"
-      version = "0.45.0"
-    }
-  }
-
   backend "s3" {
     endpoint = "storage.yandexcloud.net"
     bucket   = "acheremisin-bucket"
