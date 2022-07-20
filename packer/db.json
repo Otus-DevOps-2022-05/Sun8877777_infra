@@ -9,6 +9,7 @@
             "image_family": "reddit-db",
             "ssh_username": "ubuntu",
             "zone": "{{user `zone`}}",
+            "subnet_id": "{{user `subnet_id`}}",
             "use_ipv4_nat": true,
             "disk_type": "{{user `disk_type`}}",
             "platform_id": "standard-v1"
@@ -16,9 +17,8 @@
     ],
     "provisioners": [
         {
-            "type": "shell",
-            "script": "scripts/install_mongodb.sh",
-            "execute_command": "sudo {{.Path}}"
+        "type": "ansible",
+        "playbook_file": "ansible/packer_db.yml"
         }
     ]
 }
