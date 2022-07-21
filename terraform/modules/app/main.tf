@@ -6,6 +6,7 @@ resource "yandex_compute_instance" "app" {
   resources {
     cores  = var.resources.cores
     memory = var.resources.memory
+    core_fraction = 20
   }
 
   boot_disk {
