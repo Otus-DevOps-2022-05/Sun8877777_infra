@@ -8,4 +8,3 @@ all:
       hosts:
         reddit-db:
           ansible_host: 51.250.79.127
-    ungrouped: {}
