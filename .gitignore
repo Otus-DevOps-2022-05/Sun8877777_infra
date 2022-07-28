@@ -10,3 +10,4 @@ terraform/prod/.terraform/
 terraform/stage/.terraform/
 terraform/prod/provider.tf
 terraform/stage/provider.tf
+*.retry

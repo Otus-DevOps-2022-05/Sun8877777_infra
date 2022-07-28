@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://json.schemastore.org/codecov.json": "file://wsl.localhost/Ubuntu_20.04.01/home/alex/OTUS/Sun8877777_infra/ansible/deploy.yml"
+    }
+}
