@@ -1,3 +1,4 @@
+---
 - name: install for db srv
   hosts: all
   become: true

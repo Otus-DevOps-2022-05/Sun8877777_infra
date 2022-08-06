@@ -1,3 +1,4 @@
+---
 - name: install for app srv
   hosts: all
   become: true

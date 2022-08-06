@@ -11,3 +11,6 @@ terraform/stage/.terraform/
 terraform/prod/provider.tf
 terraform/stage/provider.tf
 *.retry
+jdauphant.nginx
+ansible/roles/jdauphant.nginx/
+ansible/roles/jdauphant.nginx
