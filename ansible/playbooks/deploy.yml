@@ -7,7 +7,7 @@
     - name: Install git for app server
       ansible.builtin.apt:
         name: git
-        update_cache: yes
+        update_cache: true
         cache_valid_time: 3600
 
     - name: Fetch the latest version of application code
