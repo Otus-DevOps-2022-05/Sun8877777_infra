@@ -1,0 +1,11 @@
+- name: Install ruby and bundler for host
+  ansible.builtin.apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+    cache_valid_time: 3600
+  loop:
+  - ruby-full
+  - ruby-bundler
+  - build-essential
+  tags: ruby

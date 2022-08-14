@@ -1,2 +1,9 @@
-ansible=2.4
-#yandexcloud==0.10.1
+# ansible>=2.4
+# yandexcloud==0.10.1
+molecule>=2.6
+testinfra>=1.10
+python-vagrant>=0.5.15
+molecule-vagrant
+yamllint
+ansible-lint
+pytest-testinfra>=6.8.0

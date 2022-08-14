@@ -14,6 +14,7 @@ terraform/stage/provider.tf
 jdauphant.nginx
 ansible/roles/jdauphant.nginx/
 ansible/roles/jdauphant.nginx
+ansible/.env
 # Vagrant & molecule
 .vagrant/
 *.log
@@ -21,3 +22,4 @@ ansible/roles/jdauphant.nginx
 .molecule
 .cache
 .pytest_cache
+.env

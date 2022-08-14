@@ -1,0 +1,13 @@
+---
+- name: install mongodb and update cache
+  ansible.builtin.apt:
+    name: mongodb
+    update_cache: yes
+    cache_valid_time: 3600
+  tags: install
+
+- name: enable mongo
+  systemd:
+    name: mongodb
+    enabled: yes
+  tags: install
